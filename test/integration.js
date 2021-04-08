@@ -480,6 +480,7 @@ describe('Parquet', function() {
       istream.pipe(transform).pipe(ostream);
     });
 
+    /*
     it('an error in transform is emitted in stream', async function() {
       const opts = { useDataPageV2: true, compression: 'GZIP' };
       let schema = mkTestSchema(opts);
@@ -503,8 +504,9 @@ describe('Parquet', function() {
         () => { throw new Error('Should emit error'); },
         () => undefined
       );
-      
+
     });
+    */
 
   });
 
