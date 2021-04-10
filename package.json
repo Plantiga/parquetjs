@@ -21,8 +21,10 @@
     "int53": "^0.2.4",
     "lzo": "^0.4.0",
     "object-stream": "0.0.1",
+    "process": "^0.11.10",
     "snappyjs": "^0.6.0",
-    "thrift": "^0.10.0",
+    "thrift": "^0.14.1",
+    "util": "^0.12.3",
     "varint": "^5.0.0"
   },
   "devDependencies": {
