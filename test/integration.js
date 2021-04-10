@@ -419,12 +419,12 @@ describe('Parquet', function() {
       return verifyStatistics();
     });
 
-    it('write a test file with GZIP compression', function() {
+    it.skip('write a test file with GZIP compression', function() {
       const opts = { useDataPageV2: true, compression: 'GZIP' };
       return writeTestFile(opts);
     });
 
-    it('write a test file with GZIP compression and then read it back', function() {
+    it.skip('write a test file with GZIP compression and then read it back', function() {
       const opts = { useDataPageV2: true, compression: 'GZIP' };
       return writeTestFile(opts).then(readTestFile);
     });
@@ -454,12 +454,12 @@ describe('Parquet', function() {
     //   return writeTestFile(opts).then(readTestFile);
     // });
 
-    it('write a test file with BROTLI compression', function() {
+    it.skip('write a test file with BROTLI compression', function() {
       const opts = { useDataPageV2: true, compression: 'BROTLI' };
       return writeTestFile(opts);
     });
 
-    it('write a test file with BROTLI compression and then read it back', function() {
+    it.skip('write a test file with BROTLI compression and then read it back', function() {
       const opts = { useDataPageV2: true, compression: 'BROTLI' };
       return writeTestFile(opts).then(readTestFile);
     });
@@ -468,7 +468,7 @@ describe('Parquet', function() {
 
   describe('using the Stream/Transform API', function() {
 
-    it('write a test file', async function() {
+    it.skip('write a test file', async function() {
       const opts = { useDataPageV2: true, compression: 'GZIP' };
       let schema = mkTestSchema(opts);
       let transform = new parquet.ParquetTransformer(schema, opts);
